@@ -8,8 +8,8 @@
 namespace io {
     class ioter {
     public:
-        std::string input(std::istream& istream);
-        void output(std::ostream& ostream, const std::string& out_str);
+        virtual std::string input() = 0;
+        virtual void output(const std::string& out_str) = 0;
     };
 }
 

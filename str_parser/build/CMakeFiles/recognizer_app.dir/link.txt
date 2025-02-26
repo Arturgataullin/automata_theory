@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/recognizer_app.dir/main.cpp.o -o recognizer_app  libRecognizer.a libIOter.a 

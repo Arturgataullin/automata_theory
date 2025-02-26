@@ -1,0 +1,5 @@
+/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles/Recognizer.dir
+/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles/IOter.dir
+/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles/recognizer_app.dir
+/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles/rebuild_cache.dir

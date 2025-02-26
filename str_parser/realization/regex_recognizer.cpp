@@ -11,25 +11,30 @@ namespace recognizer {
         return res;
     }
 
-    std::string converter_by_format(const std::string& str) {
-        std::regex format(R"(^(int|short|double)?\s*([a-zA-Z][a-zA-Z0-9]{0,15})\s*:=\s*([a-zA-Z0-9]+)\s*([\+\*\-/])\s*([0-9]+))");
+    std::vector<std::string> converter_by_format(const std::string& str) {
+        std::regex format(R"(^(int|short|double)?\s*([a-zA-Z][a-zA-Z0-9]{0,15})\s*:=\s*([0-9]+|[a-zA-Z][a-zA-Z0-9]{0,15})\s*([\+\*\-/])\s*([0-9]+))");
         std::smatch match;
-        std::stringstream ss;
+        std::vector<std::string> results;
         if (std::regex_search(str, match,format)) {
-            auto match1 = match[2].str();
-            auto match2 = match[1].str();
-            if (match2.empty()) match2 = "int";
-            ss << match1 << " + " << match2 << "\n";
+            auto match1 = match[1].str();
+            if (match1.empty()) match1 = "int";
+            results.push_back(match1);
+            results.push_back(match[2].str());
+            results.push_back(match[3].str());
         }
-        return ss.str();
+        return results;
     }
 
     std::string regex_str_recognizer::recognize(const std::string &text) {
         std::stringstream converted_text_ss;
         auto sentences = tokenGetter(text);
         for (auto& sent : sentences) {
-            auto str = converter_by_format(sent);
-            converted_text_ss << str;
+            auto results = converter_by_format(sent);
+            if (!results.empty() && isdigit((results[2])[0]) || !results.empty() && is_matched(results[2])) {
+                converted_text_ss << results[1] << " + " << results[0] << "\n";
+                insert_word(results[1]);
+            }
+
         }
         return converted_text_ss.str();
     }

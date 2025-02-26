@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIOter.a CMakeFiles/IOter.dir/ioters/io_file.cpp.o CMakeFiles/IOter.dir/ioters/io_standart.cpp.o
+/usr/bin/ranlib libIOter.a

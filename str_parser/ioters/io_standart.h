@@ -5,9 +5,14 @@
 #ifndef RECOGNIZER_IO_STANDART_H
 #define RECOGNIZER_IO_STANDART_H
 
-namespace io {
-    class standart_ioter {
+#include <string>
+#include "io.h"
 
+namespace io {
+    class standart_ioter : public ioter {
+    public:
+        std::string input() override;
+        void output(const std::string& out_str) override;
     };
 }
 

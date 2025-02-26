@@ -9,7 +9,8 @@
 
 namespace io {
     class file_ioter : public ioter {
-
+        std::string input() override;
+        void output(const std::string& out_str) override;
     };
 }
 #endif //RECOGNIZER_IO_FILE_H
