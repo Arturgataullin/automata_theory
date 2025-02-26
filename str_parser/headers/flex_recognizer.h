@@ -1,0 +1,8 @@
+//
+// Created by artur on 25.02.2025.
+//
+
+#ifndef RECOGNIZER_FLEX_RECOGNIZER_H
+#define RECOGNIZER_FLEX_RECOGNIZER_H
+
+#endif //RECOGNIZER_FLEX_RECOGNIZER_H
