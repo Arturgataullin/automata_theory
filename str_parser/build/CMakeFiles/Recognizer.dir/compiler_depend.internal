@@ -5,9 +5,11 @@ CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
  /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/regex_recognizer.cpp
  /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/headers/recognizer.h
  /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/headers/regex_recognizer.h
+ /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/helper_for_parser.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
+ /usr/include/c++/13/algorithm
  /usr/include/c++/13/backward/binders.h
  /usr/include/c++/13/bit
  /usr/include/c++/13/bits/algorithmfwd.h
@@ -62,6 +64,8 @@ CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
  /usr/include/c++/13/bits/predefined_ops.h
  /usr/include/c++/13/bits/ptr_traits.h
  /usr/include/c++/13/bits/range_access.h
+ /usr/include/c++/13/bits/ranges_algo.h
+ /usr/include/c++/13/bits/ranges_algobase.h
  /usr/include/c++/13/bits/ranges_base.h
  /usr/include/c++/13/bits/ranges_cmp.h
  /usr/include/c++/13/bits/ranges_util.h
@@ -143,6 +147,8 @@ CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
  /usr/include/c++/13/new
  /usr/include/c++/13/numbers
  /usr/include/c++/13/ostream
+ /usr/include/c++/13/pstl/execution_defs.h
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/regex
  /usr/include/c++/13/sstream
@@ -156,6 +162,7 @@ CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
  /usr/include/c++/13/type_traits
  /usr/include/c++/13/typeinfo
  /usr/include/c++/13/unordered_set
+ /usr/include/c++/13/vector
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h

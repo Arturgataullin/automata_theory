@@ -1,0 +1,78 @@
+%class Parser
+%header Parser.h
+
+%start StateMap::start
+%map StateMap
+
+%%
+Default {
+  next unexpected {}
+}
+
+unexpected {
+    next [ ctxt.peek() == '\n'] start { unacceptable(); }
+}
+
+start {
+    next [ isalpha(ctxt.peek()) ]      word_state  { token_start(); increase_state(); consume(); }
+
+    next [ctxt.peek() == ' ']          white_space_state { consume();}
+ }
+
+word_state {
+    next [ isalpha(ctxt.peek()) ]   word_state { consume(); }
+
+    next [ isdigit(ctxt.peek()) ]   word_state { consume(); }
+
+    next [ ctxt.peek() == ' ' ]   white_space_state { token_end(); consume(); }
+
+    next [ ctxt.peek() == ':' ]     double_dot_state {  fix_state(); token_end(); increase_state(); consume(); }
+
+    next [ ctxt.is_operation_sign(ctxt.peek()) && ctxt.get_state() == 4]  oper_state { token_end(); increase_state(); consume(); }
+
+    next [ ctxt.peek() == '\n' && ctxt.get_state() == 6] start { token_end(); acceptable(); }
+}
+
+double_dot_state {
+    next [ ctxt.peek() == '=']     eq_state { consume(); }
+}
+
+eq_state {
+    next [ ctxt.peek() == ' ']    white_space_state { consume(); }
+
+    next [ isdigit(ctxt.peek())]    number_state { token_start(); increase_state(); consume();  }
+
+    next [ isalpha(ctxt.peek())]    word_state { token_start(); increase_state(); consume();  }
+}
+
+number_state {
+    next [ ctxt.is_operation_sign(ctxt.peek()) && ctxt.get_state() == 4 ] oper_state { token_end(); increase_state(); consume (); }
+
+    next [ctxt.peek() == ' ']   white_space_state { token_end(); consume (); }
+
+    next [ isdigit(ctxt.peek()) ] number_state { consume(); }
+
+    next [ ctxt.peek() == '\n' && ctxt.get_state() == 6] start { token_end(); acceptable(); }
+}
+
+oper_state {
+    next [ isdigit(ctxt.peek()) ]  number_state { token_start(); increase_state(); consume(); }
+
+    next [ isalpha(ctxt.peek())]    word_state { token_start(); increase_state(); consume();  }
+
+    next [ ctxt.peek() == ' ' ]  oper_state { consume(); }
+}
+
+white_space_state {
+    next [ isalpha(ctxt.peek()) && (ctxt.get_state() == 1 || ctxt.get_state() == 3 || ctxt.get_state() == 5)] word_state {token_start(); increase_state(); consume();}
+
+    next [ isdigit(ctxt.peek()) && (ctxt.get_state() == 3 || ctxt.get_state() == 5) ] number_state {token_start(); increase_state(); consume();}
+
+    next [  ctxt.peek() == ':' && ctxt.get_state() == 2 ] double_dot_state { increase_state(); consume(); }
+
+    next [  ctxt.peek() == ' ' ] white_space_state { consume(); }
+
+    next [ ctxt.is_operation_sign(ctxt.peek()) && ctxt.get_state() == 4 ] oper_state { increase_state(); consume(); }
+}
+
+%%

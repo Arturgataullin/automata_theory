@@ -206,4 +206,10 @@ CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o: \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/erase_if.h \
- /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/../headers/recognizer.h
+ /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/../headers/recognizer.h \
+ /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/helper_for_parser.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/ranges_algo.h \
+ /usr/include/c++/13/bits/ranges_algobase.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h

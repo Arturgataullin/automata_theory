@@ -1,0 +1,33 @@
+digraph my_state_machine {
+
+    node
+        [shape=Mrecord width=1.5];
+
+    subgraph cluster_Map1 {
+
+        label="Map1";
+
+        //
+        // States (Nodes)
+        //
+
+        "Map1::Start"
+            [label="{Start}"];
+
+        "Map1::OK"
+            [label="{OK}"];
+
+        "%start"
+            [label="" shape=circle style=filled fillcolor=black width=0.25];
+
+        //
+        // Transitions (Edges)
+        //
+
+        "Map1::Start" -> "Map1::OK"
+            [label="ONE/\l"];
+
+        "%start" -> "Map1::start"
+    }
+
+}

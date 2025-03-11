@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Recognizer
-
-# Build rule for target.
-Recognizer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Recognizer
-.PHONY : Recognizer
-
-# fast build rule for target.
-Recognizer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/build
-.PHONY : Recognizer/fast
-
-#=============================================================================
 # Target rules for targets named IOter
 
 # Build rule for target.
@@ -141,6 +128,19 @@ IOter: cmake_check_build_system
 IOter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/build
 .PHONY : IOter/fast
+
+#=============================================================================
+# Target rules for targets named Recognizer
+
+# Build rule for target.
+Recognizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Recognizer
+.PHONY : Recognizer
+
+# fast build rule for target.
+Recognizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/build
+.PHONY : Recognizer/fast
 
 #=============================================================================
 # Target rules for targets named recognizer_app
