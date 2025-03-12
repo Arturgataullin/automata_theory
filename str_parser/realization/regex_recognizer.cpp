@@ -14,7 +14,7 @@ namespace recognizer {
             auto name2 = match[4].str();
             if (type.empty()) type = "int";
             //защита от int int или int Int (нечуств к регистру)
-            if (is_in_types(toLower(name1)) || is_in_types(toLower(name2)) || is_in_types(toLower(main_name))) {
+            if (is_in_types(toLower(main_name))) {
                 return results;
             }
             results.push_back(type);

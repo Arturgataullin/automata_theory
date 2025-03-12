@@ -1,2 +1,2 @@
-/usr/bin/ar qc libRecognizer.a CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
+/usr/bin/ar qc libRecognizer.a CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o
 /usr/bin/ranlib libRecognizer.a

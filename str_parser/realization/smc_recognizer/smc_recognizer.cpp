@@ -9,12 +9,13 @@ namespace recognizer {
 
     std::string smc_str_recognizer::recognize(const std::string& text) {
         Parser parser;
+        std::stringstream ss(text);
+        std::string line;
         std::stringstream converted_text_ss;
-        auto sentences = tokenGetter(text);
-        for (auto& sent : sentences) {
-            parser.push_string(sent);
+        while (getline(ss, line, '\n')) {
+            parser.push_string(line + "\n");
             auto results = parser.parse();
-            if ( !results.empty() && is_in_types(results[0]) && (
+            if ( !results.empty() && is_in_types(results[0]) && !is_in_types(toLower(results[1])) && (
                     is_matched((toLower(results[2]))) && is_matched(toLower(results[3])) ||
                     isdigit((results[2])[0]) && is_matched(toLower(results[3])) ||
                     isdigit((results[3])[0]) && is_matched(toLower(results[2])) ||

@@ -155,30 +155,6 @@ recognizer_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognizer_app.dir/build.make CMakeFiles/recognizer_app.dir/build
 .PHONY : recognizer_app/fast
 
-ioters/io_file.o: ioters/io_file.cpp.o
-.PHONY : ioters/io_file.o
-
-# target to build an object file
-ioters/io_file.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/ioters/io_file.cpp.o
-.PHONY : ioters/io_file.cpp.o
-
-ioters/io_file.i: ioters/io_file.cpp.i
-.PHONY : ioters/io_file.i
-
-# target to preprocess a source file
-ioters/io_file.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/ioters/io_file.cpp.i
-.PHONY : ioters/io_file.cpp.i
-
-ioters/io_file.s: ioters/io_file.cpp.s
-.PHONY : ioters/io_file.s
-
-# target to generate assembly for a file
-ioters/io_file.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/ioters/io_file.cpp.s
-.PHONY : ioters/io_file.cpp.s
-
 ioters/io_standart.o: ioters/io_standart.cpp.o
 .PHONY : ioters/io_standart.o
 
@@ -227,29 +203,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognizer_app.dir/build.make CMakeFiles/recognizer_app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-realization/regex_recognizer.o: realization/regex_recognizer.cpp.o
-.PHONY : realization/regex_recognizer.o
+realization/flex_recognizer/flex_realization.o: realization/flex_recognizer/flex_realization.cpp.o
+.PHONY : realization/flex_recognizer/flex_realization.o
 
 # target to build an object file
-realization/regex_recognizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o
-.PHONY : realization/regex_recognizer.cpp.o
+realization/flex_recognizer/flex_realization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o
+.PHONY : realization/flex_recognizer/flex_realization.cpp.o
 
-realization/regex_recognizer.i: realization/regex_recognizer.cpp.i
-.PHONY : realization/regex_recognizer.i
+realization/flex_recognizer/flex_realization.i: realization/flex_recognizer/flex_realization.cpp.i
+.PHONY : realization/flex_recognizer/flex_realization.i
 
 # target to preprocess a source file
-realization/regex_recognizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.i
-.PHONY : realization/regex_recognizer.cpp.i
+realization/flex_recognizer/flex_realization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.i
+.PHONY : realization/flex_recognizer/flex_realization.cpp.i
 
-realization/regex_recognizer.s: realization/regex_recognizer.cpp.s
-.PHONY : realization/regex_recognizer.s
+realization/flex_recognizer/flex_realization.s: realization/flex_recognizer/flex_realization.cpp.s
+.PHONY : realization/flex_recognizer/flex_realization.s
 
 # target to generate assembly for a file
-realization/regex_recognizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.s
-.PHONY : realization/regex_recognizer.cpp.s
+realization/flex_recognizer/flex_realization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.s
+.PHONY : realization/flex_recognizer/flex_realization.cpp.s
 
 # Help Target
 help:
@@ -262,18 +238,15 @@ help:
 	@echo "... IOter"
 	@echo "... Recognizer"
 	@echo "... recognizer_app"
-	@echo "... ioters/io_file.o"
-	@echo "... ioters/io_file.i"
-	@echo "... ioters/io_file.s"
 	@echo "... ioters/io_standart.o"
 	@echo "... ioters/io_standart.i"
 	@echo "... ioters/io_standart.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... realization/regex_recognizer.o"
-	@echo "... realization/regex_recognizer.i"
-	@echo "... realization/regex_recognizer.s"
+	@echo "... realization/flex_recognizer/flex_realization.o"
+	@echo "... realization/flex_recognizer/flex_realization.i"
+	@echo "... realization/flex_recognizer/flex_realization.s"
 .PHONY : help
 
 

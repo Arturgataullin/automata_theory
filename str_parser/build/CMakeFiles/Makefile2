@@ -85,12 +85,12 @@ clean: CMakeFiles/recognizer_app.dir/clean
 CMakeFiles/IOter.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IOter.dir/build.make CMakeFiles/IOter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=1,2,3 "Built target IOter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=1,2 "Built target IOter"
 .PHONY : CMakeFiles/IOter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IOter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/IOter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 0
 .PHONY : CMakeFiles/IOter.dir/rule
@@ -111,7 +111,7 @@ CMakeFiles/IOter.dir/clean:
 CMakeFiles/Recognizer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Recognizer.dir/build.make CMakeFiles/Recognizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=4,5 "Built target Recognizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=3,4 "Built target Recognizer"
 .PHONY : CMakeFiles/Recognizer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,16 +134,16 @@ CMakeFiles/Recognizer.dir/clean:
 # Target rules for target CMakeFiles/recognizer_app.dir
 
 # All Build rule for target.
-CMakeFiles/recognizer_app.dir/all: CMakeFiles/Recognizer.dir/all
 CMakeFiles/recognizer_app.dir/all: CMakeFiles/IOter.dir/all
+CMakeFiles/recognizer_app.dir/all: CMakeFiles/Recognizer.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognizer_app.dir/build.make CMakeFiles/recognizer_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognizer_app.dir/build.make CMakeFiles/recognizer_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=6,7 "Built target recognizer_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=5,6 "Built target recognizer_app"
 .PHONY : CMakeFiles/recognizer_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/recognizer_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/recognizer_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles 0
 .PHONY : CMakeFiles/recognizer_app.dir/rule

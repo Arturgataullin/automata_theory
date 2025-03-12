@@ -5,13 +5,14 @@
 #include <sstream>
 #include <iostream>
 int main() {
-    yyFlexLexer lexer;
-        if (lexer.yylex()) {
-            std::cout << "1\n";
-        } else {
-            std::cout << "0\n";
-        }
+    std::string str2("int a:= 3 + 2\n");
+    std::stringstream ss(str2);
+    yyFlexLexer lexer(&ss);
+    if (lexer.yylex()) {
+        std::cout << vector[1] << " - " << vector[0] << "\n";
+    } else {
+        std::cout << "0\n";
+    }
 
-    std::cout << str;
     return 0;
 }

@@ -1,16 +1,14 @@
 #include <memory>
-#include <iostream>
-#include "ioters/io_file.h"
 #include "ioters/io_standart.h"
 #include "headers/recognizer.h"
-#include "headers/regex_recognizer.h"
+#include "headers/flex_recognizer.h"
 
 using namespace recognizer;
 using namespace io;
 
 int main() {
     auto ioter = std::make_unique<standart_ioter>();
-    auto recognizer = std::make_unique<regex_str_recognizer>();
+    auto recognizer = std::make_unique<flex_recognizer>();
 
     std::string input = ioter->input();
     std::string res = recognizer->recognize(input);

@@ -69,24 +69,10 @@ include CMakeFiles/IOter.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/IOter.dir/flags.make
 
-CMakeFiles/IOter.dir/ioters/io_file.cpp.o: CMakeFiles/IOter.dir/flags.make
-CMakeFiles/IOter.dir/ioters/io_file.cpp.o: /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_file.cpp
-CMakeFiles/IOter.dir/ioters/io_file.cpp.o: CMakeFiles/IOter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IOter.dir/ioters/io_file.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IOter.dir/ioters/io_file.cpp.o -MF CMakeFiles/IOter.dir/ioters/io_file.cpp.o.d -o CMakeFiles/IOter.dir/ioters/io_file.cpp.o -c /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_file.cpp
-
-CMakeFiles/IOter.dir/ioters/io_file.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IOter.dir/ioters/io_file.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_file.cpp > CMakeFiles/IOter.dir/ioters/io_file.cpp.i
-
-CMakeFiles/IOter.dir/ioters/io_file.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IOter.dir/ioters/io_file.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_file.cpp -o CMakeFiles/IOter.dir/ioters/io_file.cpp.s
-
 CMakeFiles/IOter.dir/ioters/io_standart.cpp.o: CMakeFiles/IOter.dir/flags.make
 CMakeFiles/IOter.dir/ioters/io_standart.cpp.o: /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_standart.cpp
 CMakeFiles/IOter.dir/ioters/io_standart.cpp.o: CMakeFiles/IOter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IOter.dir/ioters/io_standart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IOter.dir/ioters/io_standart.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IOter.dir/ioters/io_standart.cpp.o -MF CMakeFiles/IOter.dir/ioters/io_standart.cpp.o.d -o CMakeFiles/IOter.dir/ioters/io_standart.cpp.o -c /mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/ioters/io_standart.cpp
 
 CMakeFiles/IOter.dir/ioters/io_standart.cpp.i: cmake_force
@@ -99,17 +85,15 @@ CMakeFiles/IOter.dir/ioters/io_standart.cpp.s: cmake_force
 
 # Object files for target IOter
 IOter_OBJECTS = \
-"CMakeFiles/IOter.dir/ioters/io_file.cpp.o" \
 "CMakeFiles/IOter.dir/ioters/io_standart.cpp.o"
 
 # External object files for target IOter
 IOter_EXTERNAL_OBJECTS =
 
-libIOter.a: CMakeFiles/IOter.dir/ioters/io_file.cpp.o
 libIOter.a: CMakeFiles/IOter.dir/ioters/io_standart.cpp.o
 libIOter.a: CMakeFiles/IOter.dir/build.make
 libIOter.a: CMakeFiles/IOter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libIOter.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libIOter.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/IOter.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IOter.dir/link.txt --verbose=$(VERBOSE)
 

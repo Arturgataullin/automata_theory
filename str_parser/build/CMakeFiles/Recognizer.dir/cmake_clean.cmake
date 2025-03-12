@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o"
-  "CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o.d"
+  "CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o"
+  "CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o.d"
   "libRecognizer.a"
   "libRecognizer.pdb"
 )

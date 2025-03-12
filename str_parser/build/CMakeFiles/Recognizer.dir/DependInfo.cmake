@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/regex_recognizer.cpp" "CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o" "gcc" "CMakeFiles/Recognizer.dir/realization/regex_recognizer.cpp.o.d"
+  "/mnt/c/Users/artur/CLionProjects/automata_theory/str_parser/realization/flex_recognizer/flex_realization.cpp" "CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o" "gcc" "CMakeFiles/Recognizer.dir/realization/flex_recognizer/flex_realization.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

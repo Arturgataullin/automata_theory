@@ -481,7 +481,7 @@ void StateMap_white_space_state::next(ParserContext& context)
 {
     Parser& ctxt = context.getOwner();
 
-    if ( isalpha(ctxt.peek()) && (ctxt.get_state() == 1 || ctxt.get_state() == 3 || ctxt.get_state() == 5))
+    if ( isalpha(ctxt.peek()) && (ctxt.get_state() == 0 || ctxt.get_state() == 1 || ctxt.get_state() == 3 || ctxt.get_state() == 5))
     {
         context.getState().Exit(context);
         context.clearState();
@@ -549,6 +549,23 @@ void StateMap_white_space_state::next(ParserContext& context)
         catch (...)
         {
             context.setState(StateMap::white_space_state);
+            throw;
+        }
+        context.getState().Entry(context);
+    }
+    else if (  ctxt.peek() == '\n' && ctxt.get_state() == 6 )
+
+    {
+        context.getState().Exit(context);
+        context.clearState();
+        try
+        {
+            ctxt.acceptable();
+            context.setState(StateMap::start);
+        }
+        catch (...)
+        {
+            context.setState(StateMap::start);
             throw;
         }
         context.getState().Entry(context);
